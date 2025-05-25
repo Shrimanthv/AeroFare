@@ -46,7 +46,7 @@ The goal is to empower users with actionable insights, helping them make informe
 
 1. **Clone the Repository**
 ```bash
-git clone https://github.com/yourusername/flight-fare-prediction.git
+git clone https://github.com/yourusername/AeroFare.git
 cd flight-fare-prediction
 
 Create a Virtual Environment
