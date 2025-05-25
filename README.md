@@ -48,22 +48,28 @@ The goal is to empower users with actionable insights, helping them make informe
 ```bash
 git clone https://github.com/yourusername/AeroFare.git
 cd flight-fare-prediction
+```
 
-Create a Virtual Environment
+2. Create and Activate a Virtual Environment
+Using conda:
 
 ```bash
-conda create -n flywise-env python=3.10
-conda activate flywise-env
-Install Dependencies
+conda create -n aerofare-env python=3.10
+conda activate aerofare-env
+```
+Or using venv:
+```bash
 
+python -m venv aerofare-env
+source aerofare-env/bin/activate  # On Windows use: neuropay-env\Scripts\activate
+```
+3. Install Dependencies
 ```bash
 pip install -r requirements.txt
-Run the App
-
+```
+4. Run the Application
 ```bash
 streamlit run app.py
-
-```
 
 
 ## Tech Stack
@@ -90,16 +96,18 @@ Ensure your repository includes a requirements.txt file with all necessary depen
 
 ## Project Structure 
 ```
-AeroFare/
+NeuroPay/
 │
 ├── app.py                  # Main Streamlit application
-├── model.pkl               # Trained machine learning model
+├── model.h5                # Trained ANN regression model
 ├── requirements.txt        # Python dependencies
 ├── README.md               # Project documentation
-├── utils/                  # Preprocessing functions and helpers
-│   └── data_cleaning.py
-├── data/                   # Raw and cleaned datasets (CSV)
-└── notebooks/              # Jupyter notebooks for EDA and training
+├── utils/                  # Helper functions (e.g., data processing)
+│   └── preprocess.py
+├── data/                   # Sample or processed datasets
+│   └── salary_data.csv
+└── notebooks/              # Jupyter notebooks for EDA & model training
+    └── model_training.ipynb
 
 
 ```
