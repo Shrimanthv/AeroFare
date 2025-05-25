@@ -16,10 +16,9 @@
 
 
 ## Demo
-Link: [https://aerofare-sdnre5xmvhrukj4nm7yftm.streamlit.app/](https://aerofare-sdnre5xmvhrukj4nm7yftm.streamlit.app/)
-
-[![](https://github.com/Shrimanthv/AeroFare/blob/main/Screenshot%202025-05-25%20112049.png?raw=true)]
-[![](https://github.com/Shrimanthv/AeroFare/blob/main/Screenshot%202025-05-25%20112118.png?raw=true)](
+Link: https://aerofare-sdnre5xmvhrukj4nm7yftm.streamlit.app/ (https://aerofare-sdnre5xmvhrukj4nm7yftm.streamlit.app/)
+![](https://github.com/Shrimanthv/AeroFare/blob/main/Screenshot%202025-05-25%20112049.png?raw=true)
+![](https://github.com/Shrimanthv/AeroFare/blob/main/Screenshot%202025-05-25%20112118.png?raw=true)
 ## Overview
 AeroFare is an AI-driven web app that predicts flight fares based on user inputs such as airline, route, stops, and travel time.
 It leverages machine learning models trained on historical flight data to generate accurate fare estimates.
