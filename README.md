@@ -1,4 +1,4 @@
-# AeroFare: 
+# ✈️ AeroFare: 
 
 ## Table of Contents
 * [Demo](#demo)
@@ -11,23 +11,20 @@
 * [Project Structure](#project-structure)
 * [Bug / Feature Request](#bug--feature-request)
 * [Future Scope](#future-scope)
-* [Auhtor](#author)
+* [Author](#author)
 
 
 
 ## Demo
 Link: [https://aerofare-sdnre5xmvhrukj4nm7yftm.streamlit.app/](https://aerofare-sdnre5xmvhrukj4nm7yftm.streamlit.app/)
 
-[![](https://github.com/Shrimanthv/AeroFare/blob/main/Screenshot%202025-05-25%20112049.png?raw=true)](https://flight-price-prediction-api.herokuapp.com/)
-
-[![](https://github.com/Shrimanthv/AeroFare/blob/main/Screenshot%202025-05-25%20112118.png?raw=true)](https://flight-price-prediction-api.herokuapp.com/)
-
+[![](https://github.com/Shrimanthv/AeroFare/blob/main/Screenshot%202025-05-25%20112049.png?raw=true)]
+[![](https://github.com/Shrimanthv/AeroFare/blob/main/Screenshot%202025-05-25%20112118.png?raw=true)](
 ## Overview
 AeroFare is an AI-driven web app that predicts flight fares based on user inputs such as airline, route, stops, and travel time.
 It leverages machine learning models trained on historical flight data to generate accurate fare estimates.
 The app offers a simple and interactive Streamlit interface to help users plan and budget their travel more effectively.
 
-# ✈️ AeroFare – Flight Fare Prediction System
 
 ## Motivation
 Airfare prices are highly dynamic and often unpredictable, making it challenging for travelers to book flights at the right time.
