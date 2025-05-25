@@ -6,7 +6,7 @@ from datetime import datetime
 # Load the trained model
 model = pickle.load(open("flight_rf.pkl", "rb"))
 
-st.title("✈️ Flight Fare Prediction System")
+st.title("✈️ Aero Fare")
 
 # Input fields
 dep_date = st.date_input("Departure Date")
