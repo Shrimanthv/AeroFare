@@ -1,69 +1,142 @@
-# Flight Fare Prediction: 
+# AeroFare: 
 
-## Table of Content
-  * [Demo](#demo)
-  * [Overview](#overview)
-  * [Motivation](#motivation)
-  * [Installation](#installation)
-  * [Deployement on Heroku](#deployement-on-heroku)
-  * [Directory Tree](#directory-tree)
-  * [Bug / Feature Request](#bug---feature-request)
-  * [Future scope of project](#future-scope)
+## Table of Contents
+* [Demo](#demo)
+* [Overview](#overview)
+* [Motivation](#motivation)
+* [Features](#features)
+* [Installation](#installation)
+* [Tech Stack](#tech-stack)
+* [Deployment on Streamlit](#deployment-on-streamlit)
+* [Project Structure](#project-structure)
+* [Bug / Feature Request](#bug--feature-request)
+* [Future Scope](#future-scope)
+* [Auhtor](#author)
+
 
 
 ## Demo
-Link: [https://flight-price-prediction-api.herokuapp.com/](https://flight-price-prediction-api.herokuapp.com/)
+Link: [https://aerofare-sdnre5xmvhrukj4nm7yftm.streamlit.app/](https://aerofare-sdnre5xmvhrukj4nm7yftm.streamlit.app/)
 
-[![](https://i.imgur.com/R1g2wvC.png)](https://flight-price-prediction-api.herokuapp.com/)
+[![](https://github.com/Shrimanthv/AeroFare/blob/main/Screenshot%202025-05-25%20112049.png?raw=true)](https://flight-price-prediction-api.herokuapp.com/)
 
-[![](https://i.imgur.com/p0aeL6c.png)](https://flight-price-prediction-api.herokuapp.com/)
+[![](https://github.com/Shrimanthv/AeroFare/blob/main/Screenshot%202025-05-25%20112118.png?raw=true)](https://flight-price-prediction-api.herokuapp.com/)
 
 ## Overview
-This is a Flask web app which predicts fare of Flight ticket.
+AeroFare is an AI-driven web app that predicts flight fares based on user inputs such as airline, route, stops, and travel time.
+It leverages machine learning models trained on historical flight data to generate accurate fare estimates.
+The app offers a simple and interactive Streamlit interface to help users plan and budget their travel more effectively.
+
+# ✈️ AeroFare – Flight Fare Prediction System
 
 ## Motivation
-What to do when you are at home due to this pandemic situation? I started to learn Machine Learning model to get most out of it. I came to know mathematics behind all supervised models. Finally it is important to work on application (real world application) to actually make a difference.
+Airfare prices are highly dynamic and often unpredictable, making it challenging for travelers to book flights at the right time.
+AeroFare was created to solve this problem by using machine learning to forecast flight fares based on real-world data.
+The goal is to empower users with actionable insights, helping them make informed, cost-effective travel decisions with confidence.
+
+## Features
+
+- 🔍 **Predict flight fares** based on user input (airline, source, destination, stops, departure/arrival time, etc.)
+- 📊 **Machine learning powered** with models like Random Forest Regressor
+- 🖥️ **Streamlit-based web interface** for real-time predictions
+- 📁 Clean code structure and easy-to-deploy application
+
+---
+
+
+---
 
 ## Installation
-The Code is written in Python 3.6.10. If you don't have Python installed you can find it [here](https://www.python.org/downloads/). If you are using a lower version of Python you can upgrade using the pip package, ensuring you have the latest version of pip. To install the required packages and libraries, run this command in the project directory after [cloning](https://www.howtogeek.com/451360/how-to-clone-a-github-repository/) the repository:
+
+1. **Clone the Repository**
+```bash
+git clone https://github.com/yourusername/flight-fare-prediction.git
+cd flight-fare-prediction
+
+Create a Virtual Environment
+
+```bash
+conda create -n flywise-env python=3.10
+conda activate flywise-env
+Install Dependencies
+
 ```bash
 pip install -r requirements.txt
+Run the App
+
+```bash
+streamlit run app.py
+
 ```
 
-## Deployement on Heroku
-Login or signup in order to create virtual app. You can either connect your github profile or download ctl to manually deploy this project.
 
-[![](https://i.imgur.com/dKmlpqX.png)](https://heroku.com)
+## Tech Stack
 
-Our next step would be to follow the instruction given on [Heroku Documentation](https://devcenter.heroku.com/articles/getting-started-with-python) to deploy a web app.
+| Layer          | Tools Used                              |
+|----------------|------------------------------------------|
+| Frontend       | Streamlit                               |
+| Backend        | Python, Scikit-learn, Pandas, NumPy     |
+| Model Training | RandomForestRegressor, DecisionTreeRegressor |
+| Deployment     | Local (can be extended to Streamlit Cloud, AWS, etc.) |
 
-## Directory Tree 
+## Deployment on Streamlit
+To deploy this project on Streamlit Cloud, follow these steps:
+
+Sign up or log in to Streamlit.
+
+Connect your GitHub account to Streamlit.
+
+Create a new app by selecting the repository containing your project.
+
+Choose the appropriate Python file (e.g., app.py) as the entry point.
+
+Ensure your repository includes a requirements.txt file with all necessary dependencies.
+
+## Project Structure 
 ```
-├── static 
-│   ├── css
-├── template
-│   ├── home.html
-├── Procfile
-├── README.md
-├── app.py
-├── flight_price.ipynb
-├── flight_rf.pkl
-├── requirements.txt
+AeroFare/
+│
+├── app.py                  # Main Streamlit application
+├── model.pkl               # Trained machine learning model
+├── requirements.txt        # Python dependencies
+├── README.md               # Project documentation
+├── utils/                  # Preprocessing functions and helpers
+│   └── data_cleaning.py
+├── data/                   # Raw and cleaned datasets (CSV)
+└── notebooks/              # Jupyter notebooks for EDA and training
+
+
 ```
+## Bug / Feature Request
+If you encounter any bugs or have suggestions for new features, please feel free to open an issue on the GitHub repository.
+
+To report a bug:
+Provide a clear description of the problem, steps to reproduce it, and any relevant screenshots or error messages.
+
+To request a feature:
+Describe the new functionality you'd like to see and explain how it would improve the project.
+
+Your feedback helps improve AeroFare — thank you for contributing!
 
 ## Technologies Used
 
-![](https://forthebadge.com/images/badges/made-with-python.svg)
 
-[<img target="_blank" src="https://flask.palletsprojects.com/en/1.1.x/_images/flask-logo.png" width=170>](https://flask.palletsprojects.com/en/1.1.x/) [<img target="_blank" src="https://number1.co.za/wp-content/uploads/2017/10/gunicorn_logo-300x85.png" width=280>](https://gunicorn.org) [<img target="_blank" src="https://scikit-learn.org/stable/_static/scikit-learn-logo-small.png" width=200>](https://scikit-learn.org/stable/) 
+<img src="https://streamlit.io/images/brand/streamlit-logo-secondary-colormark-darktext.svg" width="180" alt="Streamlit Logo" />
+<img src="https://scikit-learn.org/stable/_static/scikit-learn-logo-small.png" width="200" alt="Scikit-learn Logo" />
+<img src="https://pandas.pydata.org/static/img/pandas_mark.svg" width="150" alt="Pandas Logo" />
+<img src="https://numpy.org/images/logo.svg" width="150" alt="NumPy Logo" />
+🔮 Future Use and Enhancements
+Expand Model Accuracy: Incorporate additional data sources like seasonal trends, holidays, and competitor pricing to improve prediction precision.
 
+Real-time Price Tracking: Integrate APIs to fetch live flight prices and offer dynamic alerts for fare drops.
 
-## Bug / Feature Request
+Multi-modal Travel: Extend the system to predict fares for other transport modes such as trains and buses.
 
-If you find a bug (the website couldn't handle the query and / or gave undesired results), kindly open an [issue](https://github.com/Mandal-21/Flight-Price-Prediction/issues) here by including your search query and the expected result
+Mobile App Development: Build a user-friendly mobile app to increase accessibility and user engagement.
 
-## Future Scope
+Personalized Recommendations: Use user behavior and preferences to tailor travel suggestions and optimal booking times.
 
-* Use multiple Algorithms
-* Optimize Flask app.py
-* Front-End 
+## Author
+Shrimanth V
+Email: shrimanthv99@gmail.com
+Feel free to reach out for any questions or collaboration!
